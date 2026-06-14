@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.PcLeague" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#0000AA</item>
+        <item name="android:navigationBarColor">#0000AA</item>
+        <item name="android:windowBackground">#000080</item>
+    </style>
+</resources>

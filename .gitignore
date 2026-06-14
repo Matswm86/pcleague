@@ -1,0 +1,27 @@
+# Original game program files are NOT redistributed (Asle Rokstad's copyright).
+# The app ships only the derived factual dataset (data/pcleague.json).
+_extracted/
+*.EXE
+*.exe
+*.ICO
+RESOURCE.*
+
+# Android / Gradle
+.gradle/
+build/
+app/build/
+local.properties
+*.apk
+*.aab
+*.keystore
+captures/
+.cxx/
+
+# IDE / OS
+.idea/
+*.iml
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
