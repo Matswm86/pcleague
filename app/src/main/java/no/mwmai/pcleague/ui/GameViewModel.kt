@@ -64,7 +64,7 @@ class GameViewModel(app: Application) : AndroidViewModel(app) {
 
     fun autosave() = state?.let { SaveManager.autosave(getApplication(), it) }
 
-    fun setLang(l: String) { lang = l; state?.let { it.lang = l }; bump() }
+    fun chooseLang(l: String) { lang = l; state?.let { it.lang = l }; bump() }
 
     /* ---- actions ---- */
 

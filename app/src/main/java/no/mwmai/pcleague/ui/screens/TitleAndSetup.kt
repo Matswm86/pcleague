@@ -47,10 +47,10 @@ fun TitleScreen(vm: GameViewModel, nav: (Screen) -> Unit) {
         Spacer(Modifier.height(16.dp))
         Row(Modifier.fillMaxWidth().padding(horizontal = 12.dp)) {
             DosButton("English", color = if (vm.lang == "en") Dos.Yellow else Dos.BrightCyan,
-                modifier = Modifier.weight(1f)) { vm.setLang("en") }
+                modifier = Modifier.weight(1f)) { vm.chooseLang("en") }
             Spacer(Modifier.width(8.dp))
             DosButton("Norsk", color = if (vm.lang == "no") Dos.Yellow else Dos.BrightCyan,
-                modifier = Modifier.weight(1f)) { vm.setLang("no") }
+                modifier = Modifier.weight(1f)) { vm.chooseLang("no") }
         }
     }
 }
@@ -123,10 +123,10 @@ fun SettingsScreen(vm: GameViewModel, nav: (Screen) -> Unit) {
             Spacer(Modifier.height(6.dp))
             Row {
                 DosButton("English", color = if (vm.lang == "en") Dos.Yellow else Dos.BrightCyan,
-                    modifier = Modifier.weight(1f)) { vm.setLang("en") }
+                    modifier = Modifier.weight(1f)) { vm.chooseLang("en") }
                 Spacer(Modifier.width(8.dp))
                 DosButton("Norsk", color = if (vm.lang == "no") Dos.Yellow else Dos.BrightCyan,
-                    modifier = Modifier.weight(1f)) { vm.setLang("no") }
+                    modifier = Modifier.weight(1f)) { vm.chooseLang("no") }
             }
             Spacer(Modifier.height(14.dp))
             Text("PcLeague 2.1", color = Dos.White, fontFamily = Mono, fontWeight = FontWeight.Bold)
