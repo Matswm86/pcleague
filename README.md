@@ -27,8 +27,9 @@ https://github.com/Matswm86/pcleague/releases/download/latest/pcleague.apk
 3. The app appears as **PcLeague**.
 
 > The APK is **debug-signed** with a stable key, so reinstalling a newer build
-> over an older one Just Works — no uninstall needed. Versioned downloads are
-> also on the [Releases page](https://github.com/Matswm86/pcleague/releases).
+> over an older one Just Works — no uninstall needed. The
+> [Releases page](https://github.com/Matswm86/pcleague/releases) holds the
+> rolling `latest` build; pushing a `v*` tag publishes a versioned download there too.
 
 ## The game
 
@@ -61,8 +62,8 @@ decoders live in [`tools/`](tools/):
 | File | Contents | Format |
 |------|----------|--------|
 | `RESOURCE.001` | 92 team names + division & table position | `[4B BE len][name][stats…]`, with a `3a [global#] [divPos]` marker; divPos resets each tier |
-| `RESOURCE.008` | 1840 first-team players (20 / club) | fixed 76-byte record: name(16) + nationality(`0x14`) + position(`0x17`) + 52-byte stat block |
-| `RESOURCE.017` | 760 reserve/extra players | same 76-byte record |
+| `RESOURCE.008` | 1840 first-team player slots (20 / club), 1733 filled | fixed 76-byte record: name(16) + nationality(`0x14`) + position(`0x17`) + 52-byte stat block |
+| `RESOURCE.017` | 760 reserve/extra player slots, 722 filled | same 76-byte record |
 | `RESOURCE.006` | English + Norwegian UI strings | 71-byte slots, alternating NO/EN |
 
 Player stat block (validated against the known 1993-94 squads): `+2` age,
